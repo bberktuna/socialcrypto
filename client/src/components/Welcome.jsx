@@ -29,8 +29,8 @@ const handleSubmit = () => {
 const Welcome = () => {
     return (
         <div className="flex items-center justify-center w-full">
-            <div className="flex flex-col items-start justify-between px-4 py-12 md:flex-row md:p-20">
-                <div className="flex flex-col justify-start flex-1 md:mr-10">
+            <div className="flex flex-col items-start justify-between px-4 py-12 mf:flex-row md:p-20">
+                <div className="flex flex-col justify-start flex-1 mf:mr-10">
                   <h1 className="py-1 text-3xl text-white sm:text-5xl text-gradient">Kripto Gönder</h1>
                   <button type="button" onClick={connectWallet} className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">
                     <p className="text-base font-semibold text-white">Cüzdan Bağla</p>
@@ -54,11 +54,9 @@ const Welcome = () => {
                     <div className={`rounded-br-2xl ${companyCommonStyles}`}>
                       Blokzinciri
                     </div>
-                    
-                    
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-start flex-1 w-full mt-10 md:mt-0">
+                <div className="flex flex-col items-center justify-start flex-1 w-full mt-10 mf:mt-0">
                   <div className="flex-col items-start justify-end w-full h-40 p-3 my-5 rounded-xl sm:w-72 eth-card white-glassmorpishm">
                     <div className="flex flex-col justify-between w-full h-full">
                       <div className="flex items-start justify-between">
@@ -83,8 +81,7 @@ const Welcome = () => {
                     name="adressTo"
                     type="text"
                     handleChange={() => {}}
-                    step="0.0001"
-                    
+                    step="0.0001"      
                     />
                     <Input
                     placeholder="Miktar"
@@ -92,9 +89,7 @@ const Welcome = () => {
                     type="number"
                     handleChange={() => {}}
                     step="0.0001"
-                    
                     />
-
                     <Input
                     placeholder="Mesaj"
                     name="message"
